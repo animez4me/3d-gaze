@@ -1,0 +1,30 @@
+/opt/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /home/alexandros/CLionProjects/brisk
+-- The CXX compiler identification is GNU 4.9.4
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building with build type 'Release'
+-- Looking for OpenGV.
+-- OpenGV headers found in /home/alexandros/opengv/include
+-- Looking for Eigen dependency...
+CMake Warning at modules/FindOpenGV.cmake:34 (MESSAGE):
+  Couldn't find Eigen, this is needed for compiling with openGV
+Call Stack (most recent call first):
+  CMakeLists.txt:67 (find_package)
+
+
+-- OpenGV libraries found: /usr/local/lib/libopengv.a
+-- OpenGV libraries directories: /usr/local/lib
+CMake Error at /opt/clion-2017.1.1/bin/cmake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
+  Could NOT find OpenGV (missing: OPENGV_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /opt/clion-2017.1.1/bin/cmake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+  modules/FindOpenGV.cmake:63 (find_package_handle_standard_args)
+  CMakeLists.txt:67 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/alexandros/CLionProjects/brisk/cmake-build-default/CMakeFiles/CMakeOutput.log".
